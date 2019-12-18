@@ -1,0 +1,26 @@
+.final {
+  text-align: center; }
+  .final h2 {
+    color: navy;
+    margin-bottom: 10px; }
+  .final h3 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .final .result {
+    font-weight: 600; }
+    .final .result span {
+      color: crimson; }
+  .final .wrongDescription {
+    padding: 10px 0;
+    border-top: 1px solid navy; }
+    .final .wrongDescription:last-of-type {
+      border-bottom: 1px solid navy;
+      margin-bottom: 20px; }
+  .final .summary {
+    font-size: 24px;
+    margin: 10px 0; }
+  .final .score span {
+    font-weight: 600;
+    color: navy; }
+
+/*# sourceMappingURL=final.module.css.map */

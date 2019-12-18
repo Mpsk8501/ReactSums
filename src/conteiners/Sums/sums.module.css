@@ -1,0 +1,41 @@
+.sums h2 {
+  font-size: 36px;
+  margin-top: 15%;
+  color: navy; }
+.sums .visible {
+  display: block;
+  text-align: center; }
+.sums .inVisible {
+  display: none; }
+.sums .btnBegin {
+  width: 200px;
+  margin-top: 20%;
+  margin-left: calc(50% - 100px); }
+.sums .btnNext {
+  width: 100px;
+  margin-left: calc(50% - 50px); }
+.sums .btnBlock {
+  margin: 10% auto 10px;
+  max-width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .sums .btnBlock button:first-child {
+    order: 1; }
+  .sums .btnBlock button:last-child {
+    order: 2; }
+  .sums .btnBlock .btn {
+    min-width: 80px;
+    max-width: 120px;
+    margin: 1% 0; }
+.sums .timer {
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .sums .timer h2 {
+    font-size: 20px !important;
+    color: #303133; }
+  .sums .timer span {
+    color: #F86868; }
+
+/*# sourceMappingURL=sums.module.css.map */

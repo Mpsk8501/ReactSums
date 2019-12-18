@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+a {
+  text-decoration: none; }
+  a:active, a:hover {
+    outline: 0; }
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+:focus {
+  outline: 0; }
+
+img, audio, video {
+  max-width: 100%;
+  height: auto; }
+
+audio, canvas, iframe, video, img, svg {
+  vertical-align: middle; }
+
+iframe {
+  border: 0; }
+
+textarea {
+  resize: none;
+  /*remove the resize handle on the bottom right*/
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none; }
+
+input, textarea, select, button {
+  outline: none;
+  border: none;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0;
+  text-align: left; }
+
+html {
+  line-height: 1;
+  font-size: 15px;
+  color: #2B2A2C;
+  height: 100%;
+  background-color: #dafffc; }
+  @media screen and (max-width: 1280px) {
+    html {
+      font-size: 15px; } }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 14px; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 13px; } }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 1;
+  font-size: 1rem; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+section, .section {
+  position: relative;
+  padding: 40px 0; }
+  @media screen and (max-width: 1280px) {
+    section, .section {
+      padding: 36px 0; } }
+  @media screen and (max-width: 1280px) {
+    section, .section {
+      padding: 28px 0; } }
+  @media screen and (max-width: 1280px) {
+    section, .section {
+      padding: 20px 0; } }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh; }
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1280px; }
+  @media screen and (max-width: 980px) {
+    .container {
+      max-width: 768px; } }
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 480px; } }
+  @media screen and (max-width: 480px) {
+    .container {
+      max-width: 320px; } }
+
+#app {
+  height: 100vh;
+  width: 90%;
+  margin: auto; }
+  #app h2 {
+    font-size: 30px; }
+
+/*# sourceMappingURL=main.css.map */

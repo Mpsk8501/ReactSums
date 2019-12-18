@@ -1,0 +1,35 @@
+.final{
+  text-align: center;
+  h2{
+    color: navy;
+    margin-bottom: 10px;
+  }
+  h3{
+   font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .result{
+    font-weight: 600;
+      span{
+        color: crimson;
+      }
+    }
+  .wrongDescription{
+    padding: 10px 0;
+    border-top: 1px solid navy;
+    &:last-of-type{
+      border-bottom: 1px solid navy;
+      margin-bottom: 20px;
+    }
+  }
+  .summary{
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  .score{
+    span{
+      font-weight: 600;
+      color: navy;
+    }
+  }
+}

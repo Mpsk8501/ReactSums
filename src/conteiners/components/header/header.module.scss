@@ -1,0 +1,23 @@
+.header{
+  position: relative;
+  .nav{
+    background-color: #d8fcff;
+    ul{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .selected{
+      color: crimson;
+    }
+
+  }
+  .headerLink{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: -70px;
+
+
+  }
+}

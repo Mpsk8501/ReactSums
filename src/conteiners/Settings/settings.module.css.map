@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,aAAE;EACA,aAAa,EAAE,GAAG;AAEpB,kBAAO;EACL,KAAK,EAAE,GAAG;EACV,WAAW,EAAE,IAAI;EACjB,oBAAC;IACC,WAAW,EAAE,KAAK;IAClB,aAAa,EAAE,IAAI",
+"sources": ["settings.module.scss"],
+"names": [],
+"file": "settings.module.css"
+}

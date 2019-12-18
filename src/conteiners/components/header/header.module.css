@@ -1,0 +1,16 @@
+.header {
+  position: relative; }
+  .header .nav {
+    background-color: #d8fcff; }
+    .header .nav ul {
+      display: flex;
+      justify-content: space-around; }
+    .header .nav .selected {
+      color: crimson; }
+  .header .headerLink {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: -70px; }
+
+/*# sourceMappingURL=header.module.css.map */
