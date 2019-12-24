@@ -1,6 +1,8 @@
 import Settings from './settings';
 import Sums from './sums';
 import Notifications from './notifications';
+import {createContext} from "react";
+
 
 
 
@@ -14,4 +16,4 @@ class RootStore {
 
 }
 
-export  default new RootStore()
+export  const Store = createContext(new RootStore());

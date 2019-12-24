@@ -1,15 +1,18 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
-import withStore from "../../hocs/withStore";
 import style from './settings.module.css'
 import {Button} from "@material-ui/core";
 import {Link} from 'react-router-dom'
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
+import {Store} from '../../store/supStore';
+import {observer} from "mobx-react";
 
-function settings (props){
-    const settings = props.stores.settings;
+const  settings = observer(()=>{
+
+    const store = useContext(Store);
+    const settings = store.settings;
     function changeSettings(name,val) {
         if(settings.options[name]!==val){
             settings.change(name,val);
@@ -106,7 +109,7 @@ function settings (props){
             </section>
         )
 
-}
+})
 
-export default withStore(settings)
+export default settings
 

@@ -1,11 +1,15 @@
-import React, {useState} from 'react';
-import withStore from "../../hocs/withStore";
+import React, {useContext, useState} from 'react';
 import {Link} from "react-router-dom";
 import {Button} from "@material-ui/core";
 import style from './sums.module.css'
-import {delay} from './../../helpers/helpers'
+import {delay} from './../../helpers/helpers';
+import {Store} from '../../store/supStore';
+import {observer} from "mobx-react";
 
-function Sums(props) {
+const Sums = observer(()=> {
+
+    const store = useContext(Store);
+
     // const [state,changeState] = useState( {
     //         answer: 'h',
     //         oneSum: '',
@@ -19,12 +23,12 @@ function Sums(props) {
     // const [time,changeTime] = useState(30);
     // const [timerStopper,timerReset] = useState(false);
 
-    let addSums = props.stores.sums.addSums;
-    let sums = props.stores.sums.sums;
+    let addSums = store.sums.addSums;
+    let sums = store.sums.sums;
 
-    let baseTime = props.stores.settings.options.timeBase;
-    let time = props.stores.settings.options.time;
-    let timer = props.stores.settings.timer;
+    let baseTime = store.settings.options.timeBase;
+    let time = store.settings.options.time;
+    let timer = store.settings.timer;
 
 
     // let timer = async (time=30) =>{
@@ -64,38 +68,38 @@ function Sums(props) {
         addSums();
         changeSum(sums[0].key);
         changeBegin(false);
-        await props.stores.settings.change('stopper', true);
+        await store.settings.change('stopper', true);
         await delay(100);
-        await props.stores.settings.change('stopper', false);
+        await store.settings.change('stopper', false);
         timer(baseTime)
 
     };
 
     let next = async () => {
         if(sums.length > sumsCounter+1){
-            await props.stores.settings.change('stopper', true);
+            await store.settings.change('stopper', true);
             await delay(100);
-            await props.stores.settings.change('stopper', false);
+            await store.settings.change('stopper', false);
             timer(baseTime);
         }else {
-            await props.stores.settings.change('stopper', true);
+            await store.settings.change('stopper', true);
         }
 
         if(time>0){
             let answ = (answer) ? answer : 'нет ответа';
             if (answer === '') {
-                props.stores.sums.addAnswer(sumsCounter, answ);
-                props.stores.notifications.add('Нет ответа');
+                store.sums.addAnswer(sumsCounter, answ);
+                store.notifications.add('Нет ответа');
             } else if (answer == sums[sumsCounter]['answer']) {
-                props.stores.sums.addAnswer(sumsCounter, false);
-                props.stores.notifications.add(`Верный ответ. Вы получили 
+                store.sums.addAnswer(sumsCounter, false);
+                store.notifications.add(`Верный ответ. Вы получили 
                 ${sums[sumsCounter].difficult}балл(ов)`,'success');
             } else {
-                props.stores.sums.addAnswer(sumsCounter, answ);
-                props.stores.notifications.add('Неверный ответ');
+                store.sums.addAnswer(sumsCounter, answ);
+                store.notifications.add('Неверный ответ');
             }
         }else {
-            props.stores.sums.addAnswer(sumsCounter, 'время вышло');
+            store.sums.addAnswer(sumsCounter, 'время вышло');
 
         }
 
@@ -193,9 +197,9 @@ function Sums(props) {
         </div>
         {btn}
     </section>)
-}
+})
 
-export default withStore(Sums)
+export default Sums
 
 
 

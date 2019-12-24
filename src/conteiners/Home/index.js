@@ -2,10 +2,9 @@ import React, {useEffect, useRef, useState} from 'react';
 import {Button} from "@material-ui/core";
 import {Link} from "react-router-dom";
 import style from './home.module.css'
-import withStore from "../../hocs/withStore";
 import {delay,fadeIn} from '../../helpers/helpers'
 
-function Home(props) {
+function Home() {
     const btnVis = useRef();
     const [hello, change] = useState('');
     const [info, changeInfo] = useState('');
@@ -50,4 +49,4 @@ function Home(props) {
     )
 }
 
-export default withStore(Home)
+export default Home

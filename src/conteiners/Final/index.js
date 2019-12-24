@@ -1,16 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Button} from "@material-ui/core";
 import style from './final.module.css'
 import {Link} from "react-router-dom";
-import withStore from "../../hocs/withStore";
+import {Store} from '../../store/supStore';
+import {observer} from "mobx-react";
 
 
-function Sums(props) {
-
-    const num = props.stores.settings.options.sumsNum;
-    const wrightSums = props.stores.sums.rightAnswers.counter;
-    const score = props.stores.sums.rightAnswers.score;
-    const wrongSums = props.stores.sums.wrongAnswers;
+const Sums = observer(()=>{
+    const store = useContext(Store);
+    const num = store.settings.options.sumsNum;
+    const wrightSums = store.sums.rightAnswers.counter;
+    const score = store.sums.rightAnswers.score;
+    const wrongSums = store.sums.wrongAnswers;
 
     let percent = (wrightSums / num) * 100;
     let result = (percent >= 90) ? 5 : (percent > 80) ? 4 : (percent > 50) ? 3 : 2;
@@ -53,14 +54,14 @@ function Sums(props) {
             variant={"outlined"}
             to={'/'}
             component={Link}
-            onClick={props.stores.sums.reset}
+            onClick={store.sums.reset}
         >
             Повторить
         </Button>
     </section>)
 
-}
+})
 
-export default withStore(Sums)
+export default Sums
 
 

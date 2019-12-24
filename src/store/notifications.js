@@ -13,6 +13,7 @@ export default class{
     }
 
     @action add(message, type = 'error', timeToAutoHide = 3000){
+        console.log('dddd')
         this.notifications[++this._ai] = {
             id: this._ai,
             message,

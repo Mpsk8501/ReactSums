@@ -1,11 +1,12 @@
-import React from 'react';
-import withStore from '../../hocs/withStore';
+import React, {useContext} from 'react';
 import styles from './index.module.css';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import {Store} from '../../store/supStore'
+import {observer} from "mobx-react";
 
-class Notifications extends React.Component{
-    render(){
-        let model = this.props.stores.notifications;
+const Notifications = observer(()=>{
+        const store = useContext(Store);
+        let model = store.notifications;
         let messages = model.list.map((note) => {
             let additionalClass='none';
             if(note.type ==='error'){
@@ -34,7 +35,7 @@ class Notifications extends React.Component{
                 {messages}
             </TransitionGroup>
         );
-    }
-}
 
-export default withStore(Notifications);
+})
+
+export default Notifications;

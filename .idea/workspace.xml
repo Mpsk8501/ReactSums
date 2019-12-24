@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5de4adff-2dd4-4f7a-946e-aafdedcb1637" name="Default Changelist" comment="" />
+    <list default="true" id="5de4adff-2dd4-4f7a-946e-aafdedcb1637" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conteiners/Final/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/conteiners/Final/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conteiners/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/conteiners/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conteiners/Settings/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/conteiners/Settings/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conteiners/Sums/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/conteiners/Sums/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conteiners/notifications/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/conteiners/notifications/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/notifications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/supStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/supStore.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,11 +27,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UkifWbkYokuryJmXaTGUyREue2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store" />
+    <property name="last_opened_file_path" value="D:/загрузки/mobx-react-usecontext-codesandbox-demo-master" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -73,11 +94,26 @@
       <workItem from="1576399622813" duration="6166000" />
       <workItem from="1576475218995" duration="22131000" />
       <workItem from="1576597467975" duration="3305000" />
-      <workItem from="1576645108760" duration="18144000" />
+      <workItem from="1576645108760" duration="19316000" />
+      <workItem from="1576757903055" duration="614000" />
+      <workItem from="1577176864511" duration="5388000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
